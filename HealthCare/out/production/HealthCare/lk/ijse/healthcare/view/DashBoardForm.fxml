@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="dashboardContext" prefHeight="356.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.DashBoardFormController">
+   <children>
+      <Label layoutX="131.0" layoutY="14.0" text="Hospital Management System" textFill="#080254">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="56.0" prefHeight="1.0" prefWidth="572.0" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="74.0" onAction="#openDoctorFormOnAction" prefHeight="101.0" prefWidth="152.0" style="-fx-background-color: #16a085;" text="Doctors" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="434.0" layoutY="74.0" onAction="#openPaymentFormOnAction" prefHeight="101.0" prefWidth="152.0" style="-fx-background-color: #d35400;" text="Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="225.0" layoutY="74.0" onAction="#openPatientFormOnAction" prefHeight="101.0" prefWidth="152.0" style="-fx-background-color: #2980b9;" text="Patients" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="200.0" onAction="#openDocumentFormOnAction" prefHeight="101.0" prefWidth="572.0" style="-fx-background-color: #8e44ad;" text="Documents" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="507.0" layoutY="323.0" text="Version 1.0.0" textFill="#080254">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="323.0" text="From : CMJD-97" textFill="#080254">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

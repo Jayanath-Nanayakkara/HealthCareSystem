@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="signupFormContext" prefHeight="471.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.SignUpFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Sign up" textFill="#5e0000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="56.0" prefHeight="30.0" prefWidth="265.0" promptText="User Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="108.0" prefHeight="30.0" prefWidth="265.0" promptText="Full Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="167.0" prefHeight="30.0" prefWidth="265.0" promptText="Contact Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="222.0" prefHeight="30.0" prefWidth="265.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="270.0" prefHeight="30.0" prefWidth="265.0" promptText="Confirm Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="312.0" onAction="#signUpOnAction" prefHeight="39.0" prefWidth="265.0" style="-fx-background-color: #3498db;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="14.0" layoutY="375.0" prefHeight="3.0" prefWidth="114.0" />
+      <Separator layoutX="165.0" layoutY="375.0" prefHeight="3.0" prefWidth="114.0" />
+      <Label layoutX="134.0" layoutY="363.0" text="OR">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="409.0" onAction="#alreadyHaveAnAccountOnAction" prefHeight="39.0" prefWidth="265.0" style="-fx-background-color: #34495e;" text="Already have an Account?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="453.0" fitWidth="494.0" layoutX="296.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/aerial-view-business-team-min.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
